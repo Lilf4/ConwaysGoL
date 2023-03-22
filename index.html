@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+	<title localize="TITLE">{TITLE}</title>
+	<link rel="stylesheet" href="style.css"></link>
+	<link rel="stylesheet" href="https://lilf4.github.io/Styles/Language.css"></link>
+	<link rel="stylesheet" href="/Styles/home.css"></link>
+	<script type="text/javascript" src="https://lilf4.github.io/templates.js"></script>
+	<script type="text/javascript" src="https://lilf4.github.io/localization.js"></script>
+	<script type="text/javascript" src="script.js" defer></script>
+	<link rel="stylesheet" href="https://lilf4.github.io/font/font.css"/>
+</head>
+<body onload="onLoad()" style="background-color: rgb(37, 36, 36);">
+	<div>
+		<div id="titleDiv">
+			<h1 class="text" localize="TITLE">{TITLE}</h1>
+		</div>
+		
+		<div id="gameUI">
+			<div id="desc">
+				<h3 localize="TITLE" class="text">{TITLE}</h3>
+				<p localize="DESC" class="text">{DESC}</p>
+			</div>
+			<canvas id="gameWindow" width="800px" height="800px" style="border: 1px solid white;"></canvas>
+			<div id="inputs">
+				<div>
+					<p class="text" localize="CELL-SIZE">{CELL-SIZE}</p>
+					<input type="text" id="sizeInput" onblur="updateSize()">
+				</div>
+				<div>
+					<p class="text" localize="TICKRATE">{TICKRATE}</p>
+					<input type="text" id="tickInput" onblur="updateTickRate()">
+				</div>
+				<div>
+					<button id="gameStateBtn" onclick="changeState()" class="btn" localize="START">{START}</button>
+					<button id="clearBtn" onclick="clearBoard()" class="btn" localize="CLEAR">{CLEAR}</button>
+				</div>
+				<div id="boardLayout">
+					<p class="text" localize="BOARD">{BOARD}</p>
+					<input type="text" id="boardLink">
+					<div>
+						<button onclick="loadBoard()" class="btn" localize="LOAD">{LOAD}</button>
+						<button onclick="saveBoard()" class="btn" localize="COPY">{COPY}</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<span id="langElement"></span>
+		<div id="homeDiv">
+			<img id="homeBtn" src="/Icons/home_Dark.png" onclick="window.location = '/'">
+		</div>
+	</div>
+</body>

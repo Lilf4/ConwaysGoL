@@ -1,0 +1,38 @@
+{
+	"GENERAL":{
+		"TITLE": "Conway's Game of Life"
+	},
+	"DK":{
+		"CELL-SIZE": "Celle Størelse",
+		"TICKRATE":"Hastighed (ms)",
+		"START":"Start",
+		"STOP":"Stop",
+		"CLEAR":"Ryd",
+		"BOARD":"Spilleplade",
+		"LOAD":"Indlæs",
+		"COPY":"Kopier",
+		"DESC":"Er et cellulær automat lavet af Britisk matematiker <b>John Horton Conway</b>.<br><br>Det er et spil uden spillere, hvori evolutionen af spillet er bestemt af spillepladens initiale tilstand.<br><br><br><b>Regler</b><br><br>Spillet er sat i et 2D gitter af firkantede celler,<br>som vær har 2 tilstande levende eller død. <br>Hver celle interagere med sine 8 naboer. <br><br>Hvert 'Tick' sker den følgene logik:<b><br>• Enhver levende celle med mindre end 2 levende naboer dør.<br><br>• Enhver levende celle med 2 eller 3 levende naboer lever videre til næste generation.<br><br>• Enhver levende celle med mere end 3 levende naboer dør.<br><br>• Enhver død celle med præcist 3 levende naboer bliver en levende celle.</b>"
+	},
+	"EN":{
+		"CELL-SIZE": "Cell Size",
+		"TICKRATE":"Tick Speed (ms)",
+		"START":"Start",
+		"STOP":"Stop",
+		"CLEAR":"Clear",
+		"BOARD":"Board",
+		"LOAD":"Load",
+		"COPY":"Copy",
+		"DESC":"Is a cellular automaton made by British mathematician <b>John Horton Conway</b>.<br><br>It's a zero player game in which the evolution of the game is determined by the initial state of the board.<br><br><br><b>Rules</b><br><br>The universe of the game is set in and infinite 2d grid of square cells,<br>each of which has two states live or dead. <br>Every cell interacts with it's 8 neighbours. <br><br>Every 'Tick' the following logic accurs:<b><br>• Any live cells with under 2 live neighbours dies.<br><br>• Any live cell with 2 or 3 live neighbours lives on to the next generation.<br><br>• Any live cell with more than 3 cells dies.<br><br>• Any dead cells with exactly 3 live neighbours becomes a live cell.</b>"
+	},
+	"NL":{
+		"CELL-SIZE": "Cell Size",
+		"TICKRATE":"Tick Speed (ms)",
+		"START":"Start",
+		"STOP":"Stop",
+		"CLEAR":"Clear",
+		"BOARD":"Board",
+		"LOAD":"Load",
+		"COPY":"Copy",
+		"DESC":"&lt;&gt;&amp;"
+	}
+}
